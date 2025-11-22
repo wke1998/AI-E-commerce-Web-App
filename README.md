@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+#
+A test for Google Antigravity.
+It's a common E-commerce web App.
+
 # ASP.NET Core E-commerce App
 
 A modern, simple e-commerce web application built with **ASP.NET Core 8.0 MVC**, featuring passwordless authentication, a shopping cart system, and an admin dashboard. Designed for easy deployment on **Render**.
@@ -82,3 +87,5 @@ This project is configured for automatic deployment on [Render](https://render.c
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+=======
+>>>>>>> 227b6285852c80b14172d2ef54adbee0c3850830
