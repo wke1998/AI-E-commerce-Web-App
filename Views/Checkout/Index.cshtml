@@ -1,0 +1,24 @@
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Process" method="post">
+            <div class="form-group mb-3">
+                <label class="control-label">Shipping Address</label>
+                <textarea name="address" class="form-control" required></textarea>
+            </div>
+            
+            <h4>Payment Details</h4>
+            <div class="form-group mb-3">
+                <label class="control-label">Credit Card Number</label>
+                <input name="creditCard" class="form-control" placeholder="0000 0000 0000 0000" required />
+            </div>
+            
+            <button type="submit" class="btn btn-success">Pay & Place Order</button>
+        </form>
+    </div>
+</div>

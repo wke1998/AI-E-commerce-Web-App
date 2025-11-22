@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: ecommerce-app
+    env: docker
+    plan: free
+    region: oregon
+    buildCommand: docker build -t ecommerce-app .
+    startCommand: ./ecommerce-app
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: ConnectionStrings__DefaultConnection
+        fromDatabase:
+          name: ecommerce-db
+          property: connectionString
+
+databases:
+  - name: ecommerce-db
+    plan: free
+    databaseName: ecommerce
+    user: ecommerce_user
